@@ -28,22 +28,26 @@ function RegionComponent() {
   }, [regionId]);
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Stores in {regionId}</h1>
-      {stores.map((store) => (
-        <Link to={`/store/${store.id}`} key={store.id}>
-          <div className="mb-6 border p-4 rounded-xl shadow" 
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, 
-          backgroundSize: 'cover' }}>
-            <h2 className="text-xl font-semibold">{store.StoreName}</h2>
-            <p className="mt-2"><span className="font-bold">Location:</span> {store.Location}</p>
-            <p className="mt-2"><span className="font-bold">Opening Hours:</span> {store['Opening hours']}</p>
-            <p className="mt-2"><span className="font-bold">Closing Hours:</span> {store['Closing Hours']}</p>
-          </div>
-        </Link>
-      ))}
-      <BackButton />
-    </div>
+    <main className="flex flex-col justify-between min-h-screen">
+      <body className="flex flex-col items-center w-full mx-auto px-8 pt-4">
+        <h1 className="text-2xl font-bold mb-4">Stores in {regionId}</h1>
+        {stores.map((store) => (
+          <Link to={`/store/${store.id}`} key={store.id}>
+            <div className="mb-6 border p-4 rounded-xl shadow" 
+            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, 
+            backgroundSize: 'cover' }}>
+              <h2 className="text-xl font-semibold">{store.StoreName}</h2>
+              <p className="mt-2"><span className="font-bold">Location:</span> {store.Location}</p>
+              <p className="mt-2"><span className="font-bold">Opening Hours:</span> {store['Opening hours']}</p>
+              <p className="mt-2"><span className="font-bold">Closing Hours:</span> {store['Closing Hours']}</p>
+            </div>
+          </Link>
+        ))}
+      </body>
+      <footer>
+        <BackButton />
+      </footer>
+    </main>
   );
 }
 
