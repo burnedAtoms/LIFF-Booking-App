@@ -6,7 +6,14 @@ const Strings = {
     businessInfo: "Information about the business...",
     liffInitSucceeded: "LIFF init succeeded.",
     liffInitFailed: "LIFF init failed.",
-    makeReservation: "Book Appointment"
+    makeReservation: "Book Appointment",
+    selectEmployee: "Select an Employee",
+    confirmSelection: "Do you want to select",
+    cancel: "Cancel",
+    confirm: "Confirm",
+    regions: "Regions",
+    backBtnString: "Back",
+    stores: "Stores",
   },
   zh: {
     exampleSalon: "示例沙龙",
@@ -15,7 +22,14 @@ const Strings = {
     businessInfo: "关于业务的信息...",
     liffInitSucceeded: "LIFF初始化成功。",
     liffInitFailed: "LIFF初始化失败。",
-    makeReservation: "预约"
+    makeReservation: "预约",
+    selectEmployee: "选择员工",
+    confirmSelection: "你想选择",
+    cancel: "取消",
+    confirm: "确认",
+    regions: "地区",
+    backBtnString: "返回",
+    stores: "商店",
   },
 };
 
