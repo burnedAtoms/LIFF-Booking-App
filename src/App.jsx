@@ -4,6 +4,8 @@ import Regions from './Regions';
 import RegionComponent from './RegionComponent';
 import StoreComponent from './StoreComponent';
 import LanguageContext from './LanguageContext';
+import BookingCalendar from './BookingCalendar';
+import ServicesComponent from './ServicesComponent';
 import Strings from './Strings';
 import liff from '@line/liff';
 
@@ -59,6 +61,8 @@ function App() {
             <Route path="/regions" element={<Regions />} />
             <Route path="/region/:regionId" element={<RegionComponent />} />
             <Route path="/store/:storeId" element={<StoreComponent />} />
+            <Route path="/BookingCalendar" element={<BookingCalendar />} />
+            <Route path="/services/:employeeId" element={<ServicesComponent />} />
           </Routes>
         </div>
       </Router>
