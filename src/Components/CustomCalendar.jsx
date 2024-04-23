@@ -165,7 +165,7 @@ const CustomCalendar = ({ selectedDate: initialSelectedDate, handleDateChange, i
                 handleDateChange(date);
               }}
               disabled={!isSelectable(day)}
-              className={`w-10 h-10 rounded-3xl bg-transparent ${colorClass} font-bold text-center ${day === selectedDate.getDate() && monthDate.getMonth() === selectedDate.getMonth() && monthDate.getFullYear() === selectedDate.getFullYear() ? 'bg-green-700 text-white' :
+              className={`w-10 h-10 rounded-3xl ${colorClass} font-bold text-center ${day === selectedDate.getDate() && monthDate.getMonth() === selectedDate.getMonth() && monthDate.getFullYear() === selectedDate.getFullYear() ? 'bg-green-700 text-white' :
                   day === new Date().getDate() && monthDate.getMonth() === new Date().getMonth() && monthDate.getFullYear() === new Date().getFullYear() ? 'bg-green-300 text-white' : ''
                 }`}
             >
